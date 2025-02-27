@@ -1,6 +1,6 @@
 # TESS Time Correction
 
-This repository shows how the TESS Quick-Look Pipeline applies barycentric time correction to time stamps recorded on the TESS spacecraft using spacecraft position and sky coordinates. It includes both the [data files](ephemeris-data/) containing the spacecraft position data (2018-2025) and a reference implementation with example usage in the ["TESS Time Correction" notebook](TESS Time Correction.ipynb).
+This repository shows how the TESS Quick-Look Pipeline applies barycentric time correction to time stamps recorded on the TESS spacecraft using spacecraft position and sky coordinates. It includes both the [data files](ephemeris_data/) containing the spacecraft position data (2018-2025) and a reference implementation with example usage in the [TESS Time Correction notebook](TESS%20Time%20Correction.ipynb).
 
 To run the notebook, make sure you have Python installed on your system and create and activate a virtual environment (or skip this step if you prefer to use the global installation):
 ```shell
