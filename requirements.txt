@@ -1,0 +1,5 @@
+astropy
+jupyter
+pandas
+numpy
+scipy
