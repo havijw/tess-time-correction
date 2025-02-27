@@ -3,6 +3,7 @@
 This directory contains files with TESS ephemeris data used for barycentric time correction by QLP. The files are CSV files with X,Y,Z coordinates in AU from the solar system barycenter and the reference frame is ICRF.
 
 Each file has a set of sectors it is meant to be used for:
+
 - Sectors 1-5: [20180720_tess_ephem.csv](20180720_tess_ephem.csv)
 - Sectors 6-19: [20190101_tess_ephem.csv](20190101_tess_ephem.csv)
 - Sectors 20-32: [20200101_tess_ephem.csv](20200101_tess_ephem.csv)
@@ -41,3 +42,7 @@ JDTDB,Calendar Date (TDB),X,Y,Z,LT,RG,RR,
 ```
 
 (see the format of the other .csv files in the directory for guidance)
+
+After adding the file to this directory, plot all the ephemerides by running [plot_ephemerides.py](plot_ephemerides.py). This ensures the files can all be read successfully. Examine the plot it produces and check that the transition between years is smooth, and that the new file continues the existing sine wave patterns.
+
+If you have a function that specifies where the ephemeris file is for each sector (like in the [notebook in this repository](/TESS%20Time%20Correction.ipynb)), make sure to update that as well.
